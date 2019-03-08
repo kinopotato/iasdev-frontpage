@@ -13,6 +13,7 @@ body {
   color: #2D0101;
 }
 
+
 nav {
   position: fixed;
 }
@@ -47,9 +48,9 @@ nav {
 .wrapper__sub {
   display: flex;
   flex-wrap: wrap;
-  width: 30%;
+  width: 29%;
   padding: 0 1rem;
-  margin: 0 1.5rem;
+  margin: 0 1rem;
   border-radius: 10px;
   box-shadow: .3rem .3rem 1rem #A29F9F;
 }
