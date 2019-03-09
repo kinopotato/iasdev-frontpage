@@ -53,6 +53,7 @@ body {
 
 nav {
   position: fixed;
+  top: 0;
 }
 
 .nav__ul {
@@ -62,14 +63,14 @@ nav {
 .img__icon--small {
   max-height: 50px;
 }
+
 .wrapper {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
   width: 100%;
-  justify-content: center;
 }
 
-.wrapper__top {
+.wrapper--top {
   margin-top: 5rem;
 }
 .wrapper__text--justify {
@@ -86,29 +87,35 @@ nav {
 }
 
 .wrapper__sub {
-  display: flex;
-  flex-wrap: wrap;
-  width: 29%;
-  padding: 0 1rem;
-  margin: 0 1rem;
-  border-radius: 10px;
-  box-shadow: .3rem .3rem 1rem #A29F9F;
+  width: 100%;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
 }
 
 .wrapper__sub--red {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: .3rem .3rem 1rem #A29F9F;
   background-color: #FE4A49;
+
 }
 
 .wrapper__sub--blue {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: .3rem .3rem 1rem #A29F9F;
   background-color: #2AB7C9;
 }
 
 .wrapper__sub--yellow {
+  width: 60%;
+  border-radius: 10px;
+  box-shadow: .3rem .3rem 1rem #A29F9F;
   background-color: #FFD766;
 }
 
 .display--block {
-  display: block;
+  display: inline-block;
 }
 
 .display--flex {
@@ -119,6 +126,12 @@ nav {
 .display--flex-right {
   flex-direction: row-reverse;
 }
+
+.display--flex-down {
+  flex-direction: column;
+}
+
+
 .width--full {
   width: 100%;
 }
@@ -129,4 +142,8 @@ nav {
 
 .display--hidden {
   display: none;
+}
+
+.display--view-full {
+  height: 100vh;
 }
