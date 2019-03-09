@@ -1,13 +1,20 @@
-//switch front page from hook to about
+//switch front page from home to about
 function switchFront () {
-  //find the target
-  let mainWindowArr = document.querySelectorAll("#mainWindow");
-  //change the items so one will appear and the other one go
-  mainWindowArr.forEach(function(elem, index){
+  document.querySelectorAll("#mainWindow").forEach(function(elem, index){
     elem.classList.toggle("display--hidden");
   })
   document.querySelector("#about").textContent === "home"? document.querySelector("#about").textContent = "about" : document.querySelector("#about").textContent = "home";
 }
 
 document.querySelector("#about").addEventListener("click", switchFront);
+
+//switch between FAQs and links
+function switchLinks () {
+  document.querySelectorAll("#subWindow").forEach(function(elem, index){
+    elem.classList.toggle("display--hidden");
+  })
+  document.querySelector("#about").textContent === "FAQs"? document.querySelector("#links").textContent = "FAQs" : document.querySelector("#about").textContent = "home";
+}
+
+document.querySelector("#faqs").addEventListener("click", switchLinks);
 

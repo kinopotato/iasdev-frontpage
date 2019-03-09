@@ -1,8 +1,12 @@
-html {
-  box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 90%;
 }
 
 body {
@@ -12,6 +16,7 @@ body {
   background-image: linear-gradient(135deg, #FFFFFA, #FFFDDC);
   color: #2D0101;
   font-family: 'Raleway', sans-serif;
+  box-sizing: border-box;
 }
 
 .border-test {
@@ -57,15 +62,29 @@ nav {
   top: 0;
   font-size: 1.7rem;
   padding: 0;
+  padding-top: .1rem;
+  padding-bottom: .3rem;
   margin: 0;
+  border: 1px solid #40E5FF;
+  border-right: 0;
+  border-left: 0;
+  border-top: 0;
+}
+nav:hover {
+  border: 0;
 }
 
+.nav__text {
+  font-weight: 450;
+}
 .nav__text--silver {
-  color: #F9D937;
+  color: #40E5FF;
 }
 
 .nav__ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav__li {
@@ -76,7 +95,7 @@ nav {
   text-decoration: none;
 }
 .nav__a:visited {
-  color: #F9D937;
+  color: #40E5FF;
 }
 
 .nav__btn {
@@ -84,14 +103,15 @@ nav {
   padding: 0;
 }
 .nav__btn:hover {
-  font-size: 2.3rem;
+  font-size: 1.9rem;
+}
+.nav__btn:active {
+  font-size: 2rem;
+  color: #05C6E5;
 }
 
 #about {
   cursor: pointer;
-}
-#about:hover {
-  line-height: 1.9rem;
 }
 
 .img__icon--small {
@@ -108,7 +128,7 @@ nav {
 }
 
 .wrapper--top {
-  margin-top: 5rem;
+  margin-top: 2rem;
 }
 .wrapper__text--justify {
   text-align: justify;
@@ -131,21 +151,21 @@ nav {
 
 .wrapper__sub--red {
   width: 60%;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
   border: .2rem solid #FE4A49;
 }
 
 .wrapper__sub--blue {
   width: 60%;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
   border: .2rem solid  #2AB7C9;
 }
 
 .wrapper__sub--yellow {
   width: 60%;
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
   border: .2rem solid #FFD766;
 }
@@ -153,8 +173,8 @@ nav {
 .wrapper__sub--silver {
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  border-radius: 10px;
+  width: 60%;
+  border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
   border: .2rem solid #C8C8C8;
 }
@@ -186,4 +206,8 @@ nav {
 
 .display--hidden {
   display: none;
+}
+/*******************GROUPING CLASS************************/
+.section {
+  
 }
