@@ -6,9 +6,8 @@ function switchFront () {
   mainWindowArr.forEach(function(elem, index){
     elem.classList.toggle("display--hidden");
   })
+  document.querySelector("#about").textContent === "home"? document.querySelector("#about").textContent = "about" : document.querySelector("#about").textContent = "home";
 }
 
-document.querySelectorAll(".chevron").forEach(function(elem, index) {
-  elem.addEventListener("click", switchFront);  
-})
+document.querySelector("#about").addEventListener("click", switchFront);
 
