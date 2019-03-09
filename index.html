@@ -1,6 +1,7 @@
 <html>
   <head>
-      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
 </html>
@@ -20,14 +21,15 @@
 </nav>
 
 <div class="wrapper display--flex">
-  <div id="hook">
+  
+  <div id="mainWindow">
   <div class="width--full wrapper__top">
-    <h1 class="wrapper__text--big wrapper__text--center">Ready, Set, GO!</h1>
+    <h1 class="wrapper__text--big wrapper__text--center">Ready, Set, GO!<span class="chevron right"></span></h1>
   </div>
   
   <div class="wrapper display--flex">
  
-    <div class="wrapper__sub wrapper__sub--red">
+    <div class="wrapper__sub wrapper__sub--red" id="abc">
       <h2>Ready:</h2>
       <p class="wrapper__text--justify">
           Let's begin by learning Git/GitHub along with HTML/CSS so you can begin coding with the group! 
@@ -47,19 +49,17 @@
     <div class="wrapper__sub wrapper__sub--yellow">
     <h2>Go:</h2>
       <p class="wrapper__text--justify">
-        Don't get yourself stuck in the tutorial phase forever, you're all set -- just begin!
+        Don't stay in the tutorial phase forever, you're all set -- just go!
         Start coding and immerse yourself in building and sharing and programming BUT don't stop there.
-        They say there is always someone better than you, so the 
-        Go and start coding but don't stop there, teach others as well. 
-        There is always someone better than you but that opposite is also true, so please take the time to teach :)
+        Please take the time to teach, and eventually -- lead!
       </p>
     </div>
   </div>
   </div>
 
-  <div id="about" class="border-test">
+  <div id="mainWindow" class="border-test display--hidden">
   <div class="width--full wrapper__top">
-    <h1 class="wrapper__text--big wrapper__text--center">Learn, Contribute, Bring your ideas to life</h1>
+    <h1 class="wrapper__text--big wrapper__text--center">Learn, Contribute, Bring your ideas to life<span class="chevron right"></span></h1>
   </div>
 
   <div class="wrapper display--flex">
@@ -126,3 +126,5 @@ Member Info Doc: https://goo.gl/xNZLku
     </p>
   </div>
 </div>
+
+<script src="app.js"></script>
