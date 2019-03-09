@@ -59,6 +59,9 @@ nav {
   list-style: none;
 }
 
+.img__icon--small {
+  max-height: 50px;
+}
 .wrapper {
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
