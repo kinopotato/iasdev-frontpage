@@ -22,7 +22,7 @@ body {
 }
 body::after {
   content: "";
-  background: url("https://images.pexels.com/photos/1440406/pexels-photo-1440406.jpeg");
+  
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -108,6 +108,7 @@ nav {
 
 .wrapper__img--cover {
   object-fit: cover;
+  border-radius: 1rem;
 }
 
 .wrapper__text--justify {
@@ -192,7 +193,7 @@ nav {
   padding: .2rem .5rem;
 }
 .footer a:visited {
-  color: white;
+  color: #E4E4E4;
 }
 .footer a:hover {
   color: #AEAEAE;
