@@ -10,3 +10,4 @@ v1:
 -Needs some bling, no JS yet.
 -For anyone reading this, the cat photo is a placeholder. . . but does anything else really deserve that spot
 -Meta data is barebones.
+-Need font variation.
