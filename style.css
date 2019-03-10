@@ -10,52 +10,35 @@ html {
 }
 
 body {
-  padding: 0;
+  padding: 2.4rem 0 0 0;
   margin: 0;
   background-color: #F5F5F5;
   background-image: linear-gradient(135deg, #FFFFFF, #FFFDDC);
   color: #2D0101;
   font-family: 'Raleway', sans-serif;
   box-sizing: border-box;
+  position: relative;
+  text-shadow: .2rem .2rem 1rem #A29F9F;
+}
+body::after {
+  content: "";
+  background: url("https://images.pexels.com/photos/1440406/pexels-photo-1440406.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
 }
 
 .border-test {
   background-color: teal;
   border: 1px solid black;
 }
-
-/************************************************************/
-.chevron::before {
-	border-style: solid;
-	border-width: 0.25em 0.25em 0 0;
-	content: '';
-	display: inline-block;
-	height: 0.45em;
-	left: 0.15em;
-	position: relative;
-	top: 0.35em;
-	transform: rotate(-45deg);
-	vertical-align: top;
-  width: 0.45em;
-  line-height: 1.6;
-  margin-left: .5rem;
-}
-
-.chevron.right:before {
-	left: 0;
-	transform: rotate(45deg);
-}
-
-.chevron.bottom:before {
-	top: 0;
-	transform: rotate(135deg);
-}
-
-.chevron.left:before {
-	left: 0.25em;
-	transform: rotate(-135deg);
-}
-/****************************************************/
 
 nav {
   position: fixed;
@@ -69,16 +52,15 @@ nav {
   border-right: 0;
   border-left: 0;
   border-top: 0;
-}
-nav:hover {
-  border: 0;
+  box-shadow: 0 0 .5rem #40E5FF;
+  background-color: rgba(170, 81, 157, .8);
 }
 
 .nav__text {
   font-weight: 450;
 }
 .nav__text--silver {
-  color: #40E5FF;
+  color: white;
 }
 
 .nav__ul {
@@ -95,7 +77,7 @@ nav:hover {
   text-decoration: none;
 }
 .nav__a:visited {
-  color: #40E5FF;
+  color: white;
 }
 
 .nav__btn {
@@ -103,19 +85,15 @@ nav:hover {
   padding: 0;
 }
 .nav__btn:hover {
-  font-size: 1.9rem;
+  color: #05C6E5;
 }
 .nav__btn:active {
-  font-size: 2rem;
+  /*move down and right*/
   color: #05C6E5;
 }
 
 #aboutBtn, #faqsBtn {
   cursor: pointer;
-}
-
-.img__icon--small {
-  max-height: 50px;
 }
 
 .wrapper {
@@ -126,22 +104,6 @@ nav:hover {
 
 .wrapper--center {
   align-items: center;
-}
-
-.wrapper--blue {
-  background-color: #DEFFDC;
-}
-
-.wrapper--bluer {
-  background-color: #DCFFFD;
-}
-
-.wrapper--bluest {
-  background-color: #DCDFFF;
-}
-
-#mainWindow {
-  min-height: 100vh;
 }
 
 .wrapper--top {
@@ -155,13 +117,18 @@ nav:hover {
   text-align: center;
 }
 
-.wrapper__text--big {
-  font-size: 4rem;
-  text-shadow: .2rem .2rem 1rem #A29F9F;
+.wrapper__text--indent {
+  text-indent: 1rem;
 }
 
+.wrapper__text--big {
+  font-size: 4rem;
+}
+
+.wrapper__li--circle {
+  list-style-type: circle;
+}
 .wrapper__sub {
-  width: 100%;
   padding: 1rem 1rem;
   margin: 1rem 1rem;
 }
@@ -173,27 +140,67 @@ nav:hover {
   border: .2rem solid #FE4A49;
 }
 
-.wrapper__sub--blue {
-  width: 60%;
-  border-radius: 1rem;
-  box-shadow: .3rem .3rem 1rem #A29F9F;
-  border: .2rem solid  #2AB7C9;
-}
-
 .wrapper__sub--yellow {
   width: 60%;
   border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
-  border: .2rem solid #FFD766;
+  border: .2rem solid #FFFC4A;
 }
 
-.wrapper__sub--silver {
-  margin-left: auto;
-  margin-right: auto;
+.wrapper__sub--green {
   width: 60%;
   border-radius: 1rem;
   box-shadow: .3rem .3rem 1rem #A29F9F;
-  border: .2rem solid #C8C8C8;
+  border: .2rem solid #79FF4A;
+}
+
+.wrapper__sub--orange {
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem 1rem #A29F9F;
+  border: .2rem solid #FFA24A;
+}
+
+.wrapper__ul--deco-null {
+  list-style-type: none;
+}
+
+.wrapper--border-bottom {
+  border-bottom: .1rem solid #402727;
+}
+
+.text__animate--pop {
+  animation-name: text--pop;
+  animation-duration: 4s;
+}
+@keyframes text--pop {
+  0% {
+    font-weight: 400;
+  }
+
+  25% {
+    font-weight: 500;
+  }
+
+  50% {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  75% {
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  100% {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+
+}
+.footer {
+  background-color: #292929;
+  background-image: radial-gradient(#3E3E3E 1%, #282828);
+  text-shadow: none;
 }
 
 .display--block {
@@ -217,8 +224,20 @@ nav:hover {
   width: 100%;
 }
 
+.width--40 {
+  width: 40%;
+}
+
 .width--half {
   width: 50%;
+}
+
+.width--60 {
+  width: 60%;
+}
+
+.width--75 {
+  width: 75%;
 }
 
 .display--hidden {
