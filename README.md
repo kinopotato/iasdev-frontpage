@@ -1,5 +1,6 @@
 # iasdev-frontpage
 Unofficial front page for IasDev team containing all the information needed for new members to get started.
+I am using a somewhat bastardized version of BEM for CSS.
 
 v1: 
 -Everything is working but still needs a lot of work on navigation, transition and layout to be honest.
